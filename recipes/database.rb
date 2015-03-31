@@ -1,6 +1,6 @@
 require 'chef/provisioning'
 
-include_recipie 'wordpress-cluster::_aws_settings'
+include_recipe 'wordpress-cluster::_aws_settings'
 
 machine 'wordpress-database' do
   tag 'wordpress-database'
