@@ -7,7 +7,7 @@ machine 'wordpress-app' do
   converge true
   attributes lazy {{
     'wordpress-simple' => {
-      'dbhost' => search(:node, 'tag:wordpress-database'.first['ipaddress'])
+      'dbhost' => search(:node, 'tags:wordpress-database').first['ipaddress']
     }
   }}
 end
