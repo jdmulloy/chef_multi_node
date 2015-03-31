@@ -1,0 +1,2 @@
+rm -rf cookbooks; berks vendor cookbooks
+chef-client -z -o wordpress-cluster::destroy_all
