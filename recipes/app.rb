@@ -1,4 +1,4 @@
-include_recipe 'wordpress-cluster::_aws_Settings'
+include_recipe 'wordpress-cluster::_aws_settings'
 
 machine 'wordpress-app' do
   tag 'wordpress-app'
