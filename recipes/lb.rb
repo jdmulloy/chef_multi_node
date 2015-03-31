@@ -8,5 +8,5 @@ load_balancer 'josephm354-wp' do
       :instance_port => 80,
       :instance_protocol => :http,
     }]
-  machine ['wordpress-app']
+  machines ['wordpress-app']
 end
