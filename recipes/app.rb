@@ -1,7 +1,7 @@
 include_recipe 'wordpress-cluster::_aws_Settings'
 
 machine 'wordpress-app' do
-  tag 'wordpress-app' do
+  tag 'wordpress-app'
   recipe 'wordpress-simple::app'
   action :converge
   converge true
