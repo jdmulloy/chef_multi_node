@@ -12,4 +12,4 @@ with_machine_options(
   image_id:     node['wordpress-cluster']['aws']['image_id']
 )
 
-aws_key_pair node['wordpress-cluster'['aws']['key_name']
+aws_key_pair node['wordpress-cluster']['aws']['key_name']
